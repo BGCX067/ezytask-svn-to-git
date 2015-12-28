@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="ezytask.TaskManagementModule.Views.RibbonTabItem.RibbonTabItemView"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:igRibbon="http://infragistics.com/Ribbon"
+    Height="300" Width="300">
+    <igRibbon:XamRibbon Name="ContainerRibbon">
+        <igRibbon:RibbonTabItem Header="Task Management" Name="TaskManagementRibbon">
+            <igRibbon:RibbonGroup>
+                <igRibbon:ToolHorizontalWrapPanel>
+                    <igRibbon:ButtonTool Caption="Manage projects" Name="btnProjects"
+                                         igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                                         LargeImage="../../Resources/project32.png"
+                                         Click="btnProjects_Click"/>
+                    <igRibbon:ButtonTool Caption="Tasks and assignments" Name="btnTasks"
+                                         igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                                         LargeImage="../../Resources/task.png"
+                                         Click="btnTasks_Click"/>
+                </igRibbon:ToolHorizontalWrapPanel>
+            </igRibbon:RibbonGroup>
+        </igRibbon:RibbonTabItem>
+    </igRibbon:XamRibbon>
+</UserControl>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ezytask" Class="ezytaskDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ezytask;Integrated Security=True" SettingsObjectName="ezytask.infrastructure.Properties.Settings" SettingsPropertyName="ezytaskConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Assignments" Member="Assignments">
+    <Type Name="Assignment">
+      <Column Name="IdAssignment" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdTask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Estimation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Assignment_WorkHour" Member="WorkHours" ThisKey="IdAssignment" OtherKey="IdAssignment" Type="WorkHour" />
+      <Association Name="Task_Assignment" Member="Task" ThisKey="IdTask" OtherKey="IdTask" Type="Task" IsForeignKey="true" />
+      <Association Name="User_Assignment" Member="User" ThisKey="IdUser" OtherKey="IdUser" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WorkHours" Member="WorkHours">
+    <Type Name="WorkHour">
+      <Column Name="IdWork" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdAssignment" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Assignment_WorkHour" Member="Assignment" ThisKey="IdAssignment" OtherKey="IdAssignment" Type="Assignment" IsForeignKey="true" />
+      <Association Name="User_WorkHour" Member="User" ThisKey="IdUser" OtherKey="IdUser" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projects" Member="Projects">
+    <Type Name="Project">
+      <Column Name="IdProject" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Project_Task" Member="Tasks" ThisKey="IdProject" OtherKey="IdProject" Type="Task" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rights" Member="Rights">
+    <Type Name="Right">
+      <Column Name="IdRight" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Right_Roles_Right" Member="Roles_Rights" ThisKey="IdRight" OtherKey="IdRight" Type="Roles_Right" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="IdRole" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Role_Roles_Right" Member="Roles_Rights" ThisKey="IdRole" OtherKey="IdRole" Type="Roles_Right" />
+      <Association Name="Role_User" Member="Users" ThisKey="IdRole" OtherKey="IdRole" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles_Rights" Member="Roles_Rights">
+    <Type Name="Roles_Right">
+      <Column Name="IdRole" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdRight" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Right_Roles_Right" Member="Right" ThisKey="IdRight" OtherKey="IdRight" Type="Right" IsForeignKey="true" />
+      <Association Name="Role_Roles_Right" Member="Role" ThisKey="IdRole" OtherKey="IdRole" Type="Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tasks" Member="Tasks">
+    <Type Name="Task">
+      <Column Name="IdTask" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdProject" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Task_Assignment" Member="Assignments" ThisKey="IdTask" OtherKey="IdTask" Type="Assignment" />
+      <Association Name="Project_Task" Member="Project" ThisKey="IdProject" OtherKey="IdProject" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="IdUser" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdRole" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_Assignment" Member="Assignments" ThisKey="IdUser" OtherKey="IdUser" Type="Assignment" />
+      <Association Name="User_WorkHour" Member="WorkHours" ThisKey="IdUser" OtherKey="IdUser" Type="WorkHour" />
+      <Association Name="Role_User" Member="Role" ThisKey="IdRole" OtherKey="IdRole" Type="Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

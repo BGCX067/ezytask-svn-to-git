@@ -1,0 +1,23 @@
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.Presentation.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.Presentation.pdb
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.pdb
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\obj\Debug\ResolveAssemblyReference.cache
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\obj\Debug\Microsoft.Practices.Composite.Presentation.Properties.Resources.resources
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\obj\Debug\Composite.Presentation.Desktop.csproj.GenerateResource.Cache
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\obj\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.Presentation\obj\Debug\Microsoft.Practices.Composite.Presentation.pdb
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.Presentation.pdb
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.pdb
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\bin\Debug\Microsoft.Practices.Composite.xml
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Debug\ResolveAssemblyReference.cache
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Debug\Microsoft.Practices.Composite.Presentation.Properties.Resources.resources
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Debug\Composite.Presentation.Desktop.csproj.GenerateResource.Cache
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Debug\Microsoft.Practices.Composite.Presentation.pdb

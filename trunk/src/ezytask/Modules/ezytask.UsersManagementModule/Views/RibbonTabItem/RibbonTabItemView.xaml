@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="ezytask.UsersManagementModule.Views.RibbonTabItem.UsersRibbonTabItemView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:igRibbon="http://infragistics.com/Ribbon">
+    <igRibbon:XamRibbon Name="ContainerRibbon">
+        <igRibbon:RibbonTabItem Header="User Management" Name="UserManagementRibbon">
+            <igRibbon:RibbonGroup>
+                <igRibbon:ToolHorizontalWrapPanel>
+                    <igRibbon:ButtonTool Name="btnAddUser" Click="btnAddUser_Click"
+                              Caption="Add User"
+                              igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                              LargeImage="../../Resources/add_user.png"/>
+                    <igRibbon:ButtonTool Name="btnEditUser" Click="btnEditUser_Click"
+                              Caption="Edit User" 
+                              igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                              LargeImage="../../Resources/edit_user.png"/>
+                    <igRibbon:ButtonTool Name="btnUserList" Click="btnUserList_Click"
+                                         Caption="User List"
+                                         igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                                         LargeImage="../../Resources/users.png" />
+                </igRibbon:ToolHorizontalWrapPanel>
+            </igRibbon:RibbonGroup>
+        </igRibbon:RibbonTabItem>
+    </igRibbon:XamRibbon>
+</UserControl>

@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="ezytask.TaskManagementModule.Views.ProjectsView.ProjectsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:igDock="http://infragistics.com/DockManager"
+             xmlns:igDP="http://infragistics.com/DataPresenter">
+    <igDock:ContentPane Name="ContentPane" Header="Manage projects">
+        <StackPanel Margin="5">
+            <TextBlock FontSize="18">MP</TextBlock>
+            <Separator />
+            <DockPanel LastChildFill="True">
+                <igDP:XamDataGrid
+                    Theme="Royale"
+                    GroupByAreaLocation="None"
+                    DataSource="{Binding Path=ProjectList}" 
+                    MinHeight="240"
+                    Width="400"
+                    Name="gridProjects" 
+                    Margin="10"
+                    RecordActivated="gridProjects_RecordActivated">
+                    <igDP:XamDataGrid.Effect>
+                        <DropShadowEffect BlurRadius="7" Opacity="0.3" />
+                    </igDP:XamDataGrid.Effect>
+                    <igDP:XamDataGrid.FieldLayoutSettings>
+                        <igDP:FieldLayoutSettings 
+                            RecordSelectorLocation="None"
+                            SelectionTypeRecord="Single" 
+                            SelectionTypeCell="None" 
+                            SelectionTypeField="None" 
+                            HighlightAlternateRecords="True"/>
+                    </igDP:XamDataGrid.FieldLayoutSettings>
+                    <igDP:XamDataGrid.FieldLayouts>
+                        <igDP:FieldLayout>
+                            <igDP:FieldLayout.Fields>
+                                <igDP:Field Name="IdProject" Visibility="Collapsed" />
+                                
+                                <igDP:Field Name="Name" Label="Project name">
+                                    <igDP:Field.Settings>
+                                        <igDP:FieldSettings CellMinWidth="100" />
+                                    </igDP:Field.Settings>
+                                </igDP:Field>
+                                
+                                <igDP:Field Name="Description" Label="Project description">
+                                    <igDP:Field.Settings>
+                                        <igDP:FieldSettings CellMinWidth="280" />
+                                    </igDP:Field.Settings>
+                                </igDP:Field>
+                            </igDP:FieldLayout.Fields>
+                        </igDP:FieldLayout>
+                    </igDP:XamDataGrid.FieldLayouts>
+                </igDP:XamDataGrid>
+                <TextBlock Name="lblNoProjectDefined" Visibility="Collapsed">No project defined!</TextBlock>
+                
+            </DockPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="300" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                
+                <TextBlock Style="{DynamicResource TheLabel}" Grid.Column="0" Grid.Row="0">Project name:</TextBlock>
+                <TextBox Style="{DynamicResource TheTextBox}" Grid.Column="1" Grid.Row="0" Name="txtName" MaxLength="50" />
+                
+                <TextBlock Style="{DynamicResource TheLabel}" Grid.Column="0" Grid.Row="1">Description</TextBlock>
+                <TextBox Style="{DynamicResource TheTextBox}" Grid.Column="1" Grid.Row="1" Name="txtDescription" />
+                
+                <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Width="100" Name="btnNew" Margin="5" Click="btnNew_Click">New</Button>
+                    <Button Width="100" Name="btnSave" Margin="5" Click="btnSave_Click">
+                        Save
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </igDock:ContentPane>
+</UserControl>

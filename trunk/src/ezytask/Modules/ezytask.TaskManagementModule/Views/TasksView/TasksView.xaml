@@ -1,0 +1,260 @@
+﻿<UserControl x:Class="ezytask.TaskManagementModule.Views.TasksView.TasksView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:igDP="http://infragistics.com/DataPresenter"
+             xmlns:igDock="http://infragistics.com/DockManager"
+             xmlns:toolKit="http://schemas.microsoft.com/wpf/2008/toolkit"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="504">
+    <igDock:ContentPane Name="ContentPane" Header="Manage tasks" Background="{DynamicResource WindowGradient}">
+        <StackPanel Margin="5" Name="mainStack">
+            <TextBlock FontSize="18">Task Management</TextBlock>
+            <Separator />
+            
+            <!-- GRID WITH TASKS -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                
+                <TextBlock 
+                Grid.Row="0"
+                Grid.Column="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center">Project:</TextBlock>
+                
+                <!-- PROJECTS COMBO-->
+                <DockPanel  Grid.Row="0" Grid.Column="1" Margin="0">
+                    <Button DockPanel.Dock="Right" Margin="2" Name="btnNewTask" ToolTip="New Task" Click="btnNewTask_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="16" Height="16"
+                                   Source="/ezytask.TaskManagementModule;component/Resources/newtask16.png"
+                                   />
+                            <TextBlock>New Task</TextBlock>
+                            </StackPanel>
+                    </Button>
+                    <ComboBox Style="{DynamicResource TheCombo}" 
+                              Width="Auto" 
+                              Name="cmbProject" 
+                              ItemsSource="{Binding Path=ProjectList}"
+                              DisplayMemberPath="Name"
+                              SelectedValuePath="IdProject" SelectionChanged="cmbProject_SelectionChanged"
+                              ></ComboBox>
+                </DockPanel>
+
+                <TextBlock 
+                Grid.Row="1"
+                Grid.Column="0"
+                HorizontalAlignment="Left">Tasks:</TextBlock>
+
+                <!-- TASK LIST-->
+                <StackPanel Grid.Row="1" Grid.Column="1" >
+                    <igDP:XamDataGrid
+                        Theme="Royale"
+                        GroupByAreaLocation="None"
+                        DataSource="{Binding Path=TaskList}" 
+                        MinHeight="200"
+                        MaxHeight="200"
+                        Name="gridTasks" 
+                        Margin="5"
+                        RecordActivated="gridTasks_RecordActivated">
+                        <igDP:XamDataGrid.Effect>
+                            <DropShadowEffect BlurRadius="7" Opacity="0.3" />
+                        </igDP:XamDataGrid.Effect>
+                        <igDP:XamDataGrid.FieldLayoutSettings>
+                            <igDP:FieldLayoutSettings 
+                                RecordSelectorLocation="None"
+                                SelectionTypeRecord="Single" 
+                                SelectionTypeCell="None" 
+                                SelectionTypeField="None" 
+                                HighlightAlternateRecords="True"/>
+                        </igDP:XamDataGrid.FieldLayoutSettings>
+                        <igDP:XamDataGrid.FieldLayouts>
+                            <igDP:FieldLayout>
+                                <igDP:FieldLayout.Fields>
+                                    <igDP:Field Name="IdTask" Visibility="Collapsed" />
+
+                                    <igDP:Field Name="Name" Label="Task name">
+                                        <igDP:Field.Settings>
+                                            <igDP:FieldSettings CellMinWidth="200" />
+                                        </igDP:Field.Settings>
+                                    </igDP:Field>
+
+                                    <igDP:Field Name="StartDate" Label="Start Date">
+                                        <igDP:Field.Settings>
+                                            <igDP:FieldSettings CellMinWidth="100" />
+                                        </igDP:Field.Settings>
+                                    </igDP:Field>
+                                    
+                                    <igDP:Field Name="EndDate" Label="End Date">
+                                        <igDP:Field.Settings>
+                                            <igDP:FieldSettings CellMinWidth="100" />
+                                        </igDP:Field.Settings>
+                                    </igDP:Field>
+                                </igDP:FieldLayout.Fields>
+                            </igDP:FieldLayout>
+                        </igDP:XamDataGrid.FieldLayouts>
+                    </igDP:XamDataGrid>
+                </StackPanel>
+
+                <!-- TASK DETAILS -->
+                <Grid Grid.Column="2" Grid.Row="0" Grid.RowSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">Task name:</TextBlock>
+                    <TextBox Grid.Row="0" Grid.Column="1" Name="txtTaskName" Style="{DynamicResource TheTextBox}"></TextBox>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">Task description:</TextBlock>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="txtTaskDescription" Style="{DynamicResource TheTextBox}"></TextBox>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">Start date:</TextBlock>
+                    <toolKit:DatePicker Grid.Row="2" Grid.Column="1" Name="dtpStartDate" Margin="3" Effect="{DynamicResource GenericDropShadow}"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">End date:</TextBlock>
+                    <toolKit:DatePicker Grid.Row="3" Grid.Column="1" Name="dtpEndDate"  Margin="3" Effect="{DynamicResource GenericDropShadow}"/>
+
+                    <Button Grid.Row="4" Grid.Column="1" Width="100" Margin="5" HorizontalAlignment="Right" Name="btnSaveTask" Click="btnSaveTask_Click">Save</Button>
+                </Grid>
+
+                <TextBlock Grid.Column="0" Grid.Row="2">Assignments:</TextBlock>
+                
+                <!-- ASSIGNMENT LIST -->
+                <StackPanel Grid.Row="3" Grid.Column="1" >
+                    <igDP:XamDataGrid
+                        Theme="Royale"
+                        GroupByAreaLocation="None"
+                        DataSource="{Binding Path=AssignmentList}" 
+                        MinHeight="200"
+                        MaxHeight="200"
+                        Name="gridAssignments" 
+                        Margin="5"
+                        RecordActivated="gridAssignments_RecordActivated">
+                        <igDP:XamDataGrid.Effect>
+                            <DropShadowEffect BlurRadius="7" Opacity="0.3" />
+                        </igDP:XamDataGrid.Effect>
+                        <igDP:XamDataGrid.FieldLayoutSettings>
+                            <igDP:FieldLayoutSettings 
+                                RecordSelectorLocation="None"
+                                SelectionTypeRecord="Single" 
+                                SelectionTypeCell="None" 
+                                SelectionTypeField="None" 
+                                HighlightAlternateRecords="True"/>
+                        </igDP:XamDataGrid.FieldLayoutSettings>
+                        <igDP:XamDataGrid.FieldLayouts>
+                            <igDP:FieldLayout>
+                                <igDP:FieldLayout.Fields>
+                                    <igDP:Field Name="IdProject" Visibility="Collapsed" />
+
+                                    <igDP:Field Name="Name" Label="Project name">
+                                        <igDP:Field.Settings>
+                                            <igDP:FieldSettings CellMinWidth="100" />
+                                        </igDP:Field.Settings>
+                                    </igDP:Field>
+
+                                    <igDP:Field Name="Description" Label="Project description">
+                                        <igDP:Field.Settings>
+                                            <igDP:FieldSettings CellMinWidth="280" />
+                                        </igDP:Field.Settings>
+                                    </igDP:Field>
+                                </igDP:FieldLayout.Fields>
+                            </igDP:FieldLayout>
+                        </igDP:XamDataGrid.FieldLayouts>
+                    </igDP:XamDataGrid>
+                </StackPanel>
+
+                <!-- ASSIGNMENT DETAILS -->
+                <Grid Grid.Column="4" Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">Resource:</TextBlock>
+                    <ComboBox Grid.Row="0" Grid.Column="1" Style="{DynamicResource TheCombo}" Name="cmbAssignmentResource" />
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">Name:</TextBlock>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="txtAssignmentName" Style="{DynamicResource TheTextBox}"></TextBox>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">Description:</TextBlock>
+                    <TextBox Grid.Row="2" Grid.Column="1" Name="txtAssignmentDescription" Style="{DynamicResource TheTextBox}"></TextBox>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">Start date:</TextBlock>
+                    <toolKit:DatePicker Grid.Row="3" Grid.Column="1" Name="dtpAssignmentStartDate" Margin="3" Effect="{DynamicResource GenericDropShadow}" />
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Style="{DynamicResource TheLabel}" HorizontalAlignment="Left" VerticalAlignment="Center">End date:</TextBlock>
+                    <toolKit:DatePicker Grid.Row="4" Grid.Column="1" Name="dtpAssignmentEndDate"  Margin="3" Effect="{DynamicResource GenericDropShadow}"/>
+
+                    <Button Grid.Row="5" Grid.Column="1" Width="100" Margin="5" HorizontalAlignment="Right" Name="btnSaveAssignment">Save</Button>
+                </Grid>
+
+            </Grid>
+
+            <!-- GRID WITH ASSIGNMENTS -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="260" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="260" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Style="{DynamicResource TheLabel}" Grid.Row="0" Grid.Column="0">Assignments:</TextBlock>
+
+
+
+
+            </Grid>
+    
+            <!--
+            <Popup Placement="Center" AllowsTransparency="True" PopupAnimation="Fade" Name="popSaved" Effect="{DynamicResource GenericDropShadow}" Opened="popSaved_Opened">
+                <Border BorderBrush="Black" Padding="30" CornerRadius="10">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                            <GradientStop Color="#FCFFF5" Offset="0.992"/>
+                            <GradientStop Color="#3E606F" Offset="0.185"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <TextBlock MouseDown="TextBlock_MouseDown" Text="Saved" Foreground="LightGray" FontSize="15">
+                    </TextBlock>
+                </Border>
+            </Popup>
+            -->
+            
+        </StackPanel>
+    </igDock:ContentPane>
+    
+
+</UserControl>

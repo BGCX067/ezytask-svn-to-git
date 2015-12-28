@@ -1,0 +1,7 @@
+D:\Teo\googlecode\ezytask\src\ezytask\Modules\ezytask.ActivityLoggingModule\bin\Debug\ezytask.ActivityLoggingModule.dll
+D:\Teo\googlecode\ezytask\src\ezytask\Modules\ezytask.ActivityLoggingModule\bin\Debug\ezytask.ActivityLoggingModule.pdb
+D:\Teo\googlecode\ezytask\src\ezytask\Modules\ezytask.ActivityLoggingModule\obj\Debug\ResolveAssemblyReference.cache
+D:\Teo\googlecode\ezytask\src\ezytask\Modules\ezytask.ActivityLoggingModule\obj\Debug\ezytask.ActivityLoggingModule.Properties.Resources.resources
+D:\Teo\googlecode\ezytask\src\ezytask\Modules\ezytask.ActivityLoggingModule\obj\Debug\ezytask.ActivityLoggingModule.csproj.GenerateResource.Cache
+D:\Teo\googlecode\ezytask\src\ezytask\Modules\ezytask.ActivityLoggingModule\obj\Debug\ezytask.ActivityLoggingModule.dll
+D:\Teo\googlecode\ezytask\src\ezytask\Modules\ezytask.ActivityLoggingModule\obj\Debug\ezytask.ActivityLoggingModule.pdb

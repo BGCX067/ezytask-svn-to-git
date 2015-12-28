@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 9.25" name="ezytask">
+  <DataContextMoniker Name="/ezytaskDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fabced01-12b4-480b-a778-81841e2d3a73" absoluteBounds="6.25, 4.125, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/ezytaskDataContext/Assignment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9159539-4002-4697-a775-698411e60984" absoluteBounds="6.265, 4.585, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10dd6581-5f5e-4a14-be67-5cb8723d5dfa" absoluteBounds="9, 4.25, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/ezytaskDataContext/WorkHour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85387bfd-705b-442e-8eea-d60f2c9e8c47" absoluteBounds="9.015, 4.71, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="483dca23-69a1-42b6-8ff4-47ae6ac54644" absoluteBounds="0.75, 7.5, 2, 1.2605004882812496">
+      <DataClassMoniker Name="/ezytaskDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa7bf21d-8df3-49cf-a2d0-eabd521e2027" absoluteBounds="0.765, 7.96, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06223868-7995-4d7e-aeda-716bbd58a758" absoluteBounds="0.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/ezytaskDataContext/Right" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4e54632-71ed-4342-9322-c329327ee467" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="119f25fb-603b-43ae-b408-bb5c90f59337" absoluteBounds="0.75, 2.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/ezytaskDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6204c16-289a-426a-931b-c866bfc78694" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0ccdf20-012f-4a1d-802e-2c90b282eba5" absoluteBounds="3.5, 1.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/ezytaskDataContext/Roles_Right" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f966e66-e149-4880-82cc-966f712822d2" absoluteBounds="3.515, 2.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a13e3d7d-91c1-41d0-802a-7b4178dbe7b6" absoluteBounds="3.5, 7.25, 2, 1.7535424804687496">
+      <DataClassMoniker Name="/ezytaskDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="264e3c14-0014-40b6-af6e-9ea80e17c3b0" absoluteBounds="3.515, 7.71, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f134601e-4521-44b2-aa88-6b37319055ef" absoluteBounds="3.5, 4.375, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/ezytaskDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f85567d4-541e-418c-9c9c-9194d92a5ad2" absoluteBounds="3.515, 4.835, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 5.12677124023438); (9 : 5.12677124023438)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ezytaskDataContext/Assignment/Assignment_WorkHour" />
+      <nodes>
+        <classShapeMoniker Id="fabced01-12b4-480b-a778-81841e2d3a73" />
+        <classShapeMoniker Id="10dd6581-5f5e-4a14-be67-5cb8723d5dfa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 1.84615315755208); (1.75 : 2.46502913661859); (3.5 : 2.46502913661859)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ezytaskDataContext/Right/Right_Roles_Right" />
+      <nodes>
+        <classShapeMoniker Id="06223868-7995-4d7e-aeda-716bbd58a758" />
+        <classShapeMoniker Id="d0ccdf20-012f-4a1d-802e-2c90b282eba5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 2.75); (1.75 : 2.1387127735627); (3.5 : 2.1387127735627)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ezytaskDataContext/Role/Role_Roles_Right" />
+      <nodes>
+        <classShapeMoniker Id="119f25fb-603b-43ae-b408-bb5c90f59337" />
+        <classShapeMoniker Id="d0ccdf20-012f-4a1d-802e-2c90b282eba5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.12677124023437); (7.25 : 8.12677124023437); (7.25 : 6.04288981119792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ezytaskDataContext/Task/Task_Assignment" />
+      <nodes>
+        <classShapeMoniker Id="a13e3d7d-91c1-41d0-802a-7b4178dbe7b6" />
+        <classShapeMoniker Id="fabced01-12b4-480b-a778-81841e2d3a73" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.13025024414062); (3.5 : 8.13025024414062)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ezytaskDataContext/Project/Project_Task" />
+      <nodes>
+        <classShapeMoniker Id="483dca23-69a1-42b6-8ff4-47ae6ac54644" />
+        <classShapeMoniker Id="a13e3d7d-91c1-41d0-802a-7b4178dbe7b6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.16959757486979); (6.25 : 5.16959757486979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ezytaskDataContext/User/User_Assignment" />
+      <nodes>
+        <classShapeMoniker Id="f134601e-4521-44b2-aa88-6b37319055ef" />
+        <classShapeMoniker Id="fabced01-12b4-480b-a778-81841e2d3a73" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.96419514973958); (5.875 : 6.33919514973958); (5.875 : 6.37854248046875); (7.16666666666667 : 6.37854248046875 : JumpStart); (7.33333333333333 : 6.37854248046875 : JumpEnd); (8.625 : 6.37854248046875); (9 : 6.00354248046875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ezytaskDataContext/User/User_WorkHour" />
+      <nodes>
+        <classShapeMoniker Id="f134601e-4521-44b2-aa88-6b37319055ef" />
+        <classShapeMoniker Id="10dd6581-5f5e-4a14-be67-5cb8723d5dfa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 3.84615315755208); (1.75 : 5.16959757486979); (3.5 : 5.16959757486979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ezytaskDataContext/Role/Role_User" />
+      <nodes>
+        <classShapeMoniker Id="119f25fb-603b-43ae-b408-bb5c90f59337" />
+        <classShapeMoniker Id="f134601e-4521-44b2-aa88-6b37319055ef" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,35 @@
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.pdb
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Unity.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Unity.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.ObjectBuilder2.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.Presentation.pdb
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.Presentation.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.pdb
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\obj\Debug\ResolveAssemblyReference.cache
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\obj\Debug\Microsoft.Practices.Composite.UnityExtensions.Properties.Resources.resources
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\obj\Debug\Composite.UnityExtensions.Desktop.csproj.GenerateResource.Cache
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\obj\Debug\Microsoft.Practices.Composite.UnityExtensions.dll
+D:\kit\Composite Application Guidance for WPF and Silverlight\CAL\Desktop\Composite.UnityExtensions\obj\Debug\Microsoft.Practices.Composite.UnityExtensions.pdb
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.UnityExtensions.pdb
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.Presentation.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.Presentation.pdb
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.Presentation.xml
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.pdb
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\bin\Debug\Microsoft.Practices.Composite.xml
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Debug\ResolveAssemblyReference.cache
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Debug\Microsoft.Practices.Composite.UnityExtensions.Properties.Resources.resources
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Debug\Composite.UnityExtensions.Desktop.csproj.GenerateResource.Cache
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Debug\Microsoft.Practices.Composite.UnityExtensions.dll
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Debug\Microsoft.Practices.Composite.UnityExtensions.pdb

@@ -1,0 +1,3 @@
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Release\ResolveAssemblyReference.cache
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Release\Microsoft.Practices.Composite.UnityExtensions.Properties.Resources.resources
+D:\Teo\googlecode\ezytask\src\CAL\Composite.UnityExtensions\obj\Release\Composite.UnityExtensions.Desktop.csproj.GenerateResource.Cache

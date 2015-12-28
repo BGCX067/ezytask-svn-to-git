@@ -1,0 +1,5 @@
+D:\Teo\googlecode\ezytask\src\ezytask\ezytask.utilities\bin\Debug\ezytask.utilities.dll
+D:\Teo\googlecode\ezytask\src\ezytask\ezytask.utilities\bin\Debug\ezytask.utilities.pdb
+D:\Teo\googlecode\ezytask\src\ezytask\ezytask.utilities\obj\Debug\ResolveAssemblyReference.cache
+D:\Teo\googlecode\ezytask\src\ezytask\ezytask.utilities\obj\Debug\ezytask.utilities.dll
+D:\Teo\googlecode\ezytask\src\ezytask\ezytask.utilities\obj\Debug\ezytask.utilities.pdb

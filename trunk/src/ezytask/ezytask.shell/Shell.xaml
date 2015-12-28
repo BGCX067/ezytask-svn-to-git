@@ -1,0 +1,84 @@
+﻿<Window x:Class="ezytask.shell.Shell"
+	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        xmlns:igRibbon="http://infragistics.com/Ribbon"
+        xmlns:igWindows="http://infragistics.com/Windows"
+        xmlns:igDock="http://infragistics.com/DockManager"
+        xmlns:local="clr-namespace:ezytask.shell.UserControls"
+        
+        xmlns:cal="http://www.codeplex.com/CompositeWPF"
+        
+	    x:Name="Window" Title="ezytask"
+	    Width="804" Height="637"
+        Loaded="Window_Loaded" WindowState="Maximized">
+    
+    <Window.Resources>
+        <ImageSource x:Key="ApplicationMenuImage" >Resources/xamRibbonDefaultApplicationIcon.png</ImageSource>
+        <ImageSource x:Key="ExitImage">Resources/exit2.png</ImageSource>
+        <ImageSource x:Key="SettingsImage">Resources/settings.png</ImageSource>
+        <ImageSource x:Key="AddUserImage">Resources/add_user.png</ImageSource>
+        <ImageSource x:Key="EditUserImage">Resources/edit_user.png</ImageSource>
+    </Window.Resources>
+    
+    <Grid Margin="0,0,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+        
+        <!-- THE RIBBON -->
+        <igRibbon:XamRibbon cal:RegionManager.RegionName="RibbonBarRegion"
+                            Grid.Row="0">
+            <!-- ApplicationMenu -->
+            <igRibbon:XamRibbon.ApplicationMenu>
+                <igRibbon:ApplicationMenu Image="{StaticResource ApplicationMenuImage}" 
+                                          Name="appMenu" 
+                                          cal:RegionManager.RegionName="ApplicationMenuRegion">
+                    <igRibbon:ButtonTool Name="btnSettings" SmallImage="{StaticResource SettingsImage}" Click="btnSettings_Click" Content="Settings" />
+                    <igRibbon:SeparatorTool />
+                    <igRibbon:ButtonTool Name="btnExit" SmallImage="{StaticResource ExitImage}" Click="btnExit_Click" Content="Exit" />
+                </igRibbon:ApplicationMenu>
+            </igRibbon:XamRibbon.ApplicationMenu>
+            <!-- ApplicationMenu-end -->
+            <igRibbon:RibbonTabItem Header="ezytask menu" cal:RegionManager.RegionName="RibbonTabItemRegion">
+                <!--
+                <igRibbon:RibbonGroup>
+                    <igRibbon:ToolHorizontalWrapPanel>
+                        <igRibbon:ButtonTool
+                              Caption="Paste"
+                              igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                              LargeImage="{StaticResource AddUserImage}"/>
+                        <igRibbon:ButtonTool
+                              Caption="Paste"
+                              igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                              LargeImage="{StaticResource EditUserImage}"/>
+                    </igRibbon:ToolHorizontalWrapPanel>
+                </igRibbon:RibbonGroup>
+                -->
+            </igRibbon:RibbonTabItem>
+        </igRibbon:XamRibbon>
+
+        <!-- DOCKED WINDOWS -->
+        <igDock:XamDockManager Theme="Aero"
+                               Grid.Row="2">
+            <igDock:XamDockManager.Panes>
+                <igDock:SplitPane igDock:XamDockManager.InitialLocation="DockedBottom">
+                    <igDock:ContentPane Header="eazytask debug output">
+                            <local:DebugOutputControl></local:DebugOutputControl>
+                    </igDock:ContentPane>
+                </igDock:SplitPane>
+            </igDock:XamDockManager.Panes>
+
+            <igDock:DocumentContentHost>
+                <igDock:SplitPane>
+                    <igDock:TabGroupPane cal:RegionManager.RegionName="DocumentRegion">
+                    </igDock:TabGroupPane>
+                </igDock:SplitPane>
+            </igDock:DocumentContentHost>
+
+        </igDock:XamDockManager>
+    </Grid>
+</Window>

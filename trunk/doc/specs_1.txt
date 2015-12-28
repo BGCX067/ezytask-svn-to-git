@@ -1,0 +1,35 @@
+Utilizatori si drepturi: 
+
+- definirea de drepturi 
+- gruparea drepturilor pe roluri
+- un utilizator poate avea unul sau mai multe roluri. 
+- drepturile utilizatorului sunt reuniunea de drepturi din rolurile pe care le are.
+
+Roluri: 
+	- PM
+		- creare / management utilizatori
+		- create / management taskuri
+	-utilizator
+		- vede doar taskurile proprii
+		- updatare de timp lucrat pe taskuri.
+	-Admin
+		- Acces la toate celelalte
+		- Acces la log-urile cu activitatea tuturor.
+		- vede statistici si rapoarte pt toate proiectele din sistem.
+	
+		
+Proiect & task: 
+	- un proiect are mai multe taskuri, definite de PM. 
+	- Unui utilizator i se asigneaza lucrul pe un anumit task, cu o estimare de nr de ore necesare pt a completa taskul.
+	- Pe masura ce lucreaza, utilizatorul isi completeaza taskurile cu numarul de ore lucrate pe fiecare.
+	- Cand termina taskul, il seteaza ca si "Completed".
+	
+Module: 
+	- Management utilizatori (PM)
+	- Management taskuri (PM)
+	- Input ore lucrate/taskuri
+	- rapoarte (?!)
+	- Tracing
+	- Logging cu ceea ce face fiecare.
+	- Management drepturi
+	

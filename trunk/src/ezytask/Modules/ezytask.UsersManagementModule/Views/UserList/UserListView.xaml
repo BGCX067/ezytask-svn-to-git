@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="ezytask.UsersManagementModule.Views.UserList.UserListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:igDock="http://infragistics.com/DockManager"
+             xmlns:igDP="http://infragistics.com/DataPresenter"
+    Height="300" Width="300">
+    <igDock:ContentPane Name="ContentPane" Header="User List"
+                        Image="../../Resources/users16.png">
+        <StackPanel Margin="5">
+            <TextBlock FontSize="18">User List</TextBlock>
+            <Separator></Separator>
+            <DockPanel LastChildFill="True">
+                <igDP:XamDataGrid
+                    Theme="Royale"
+                    GroupByAreaLocation="None"
+                    DataSource="{Binding Path=UserList}" 
+                    MinHeight="240"
+                    Name="gridUsers" RecordActivated="gridUsers_RecordActivated">
+                    <igDP:XamDataGrid.FieldLayoutSettings>
+                        <igDP:FieldLayoutSettings 
+                            SelectionTypeRecord="Single" 
+                            SelectionTypeCell="None" 
+                            SelectionTypeField="None" 
+                            HighlightAlternateRecords="True"/>       
+                    </igDP:XamDataGrid.FieldLayoutSettings>
+                    <igDP:XamDataGrid.FieldLayouts>
+                        <igDP:FieldLayout>
+                            <igDP:FieldLayout.Fields>
+                                <igDP:Field Name="IdUser" Visibility="Collapsed" />
+                                <igDP:Field Name="FirstName" />
+                                <igDP:Field Name="LastName" />
+                                <igDP:Field Name="Email" />
+                                <igDP:Field Name="IdRole" Visibility="Collapsed" />
+                                <igDP:Field Name="Role" />
+                            </igDP:FieldLayout.Fields>
+                        </igDP:FieldLayout>
+                    </igDP:XamDataGrid.FieldLayouts>
+                </igDP:XamDataGrid>
+            </DockPanel>
+            
+        </StackPanel>
+    </igDock:ContentPane>
+</UserControl>

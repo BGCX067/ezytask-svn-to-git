@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="ezytask.RightsManagementModule.Views.RMTabGroup.RMTabGroupView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:igRibbon="http://infragistics.com/Ribbon">
+    <igRibbon:XamRibbon Name="ContainerRibbon">
+        <igRibbon:RibbonTabItem Header="Default" Name="RightsManagementRibbon">
+            <igRibbon:RibbonGroup Name="RightsManagementRibbonGroup">
+                <igRibbon:ToolHorizontalWrapPanel>
+                    <igRibbon:ButtonTool
+                              Caption="Manage roles"
+                              igRibbon:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                              LargeImage="../../Resources/Keys32.png"
+                        Click="ButtonTool_Click"/>
+                </igRibbon:ToolHorizontalWrapPanel>
+            </igRibbon:RibbonGroup>
+        </igRibbon:RibbonTabItem>
+    </igRibbon:XamRibbon>
+</UserControl>

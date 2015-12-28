@@ -1,0 +1,180 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CAL", "CAL", "{36985A03-B81A-417B-AC43-38155F699BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite.Desktop", "..\CAL\Composite\Composite.Desktop.csproj", "{77138947-1D13-4E22-AEE0-5D0DD046CA34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite.Presentation.Desktop", "..\CAL\Composite.Presentation\Composite.Presentation.Desktop.csproj", "{F807062D-6FC9-4FF0-A9F5-5F94653EDC4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite.UnityExtensions.Desktop", "..\CAL\Composite.UnityExtensions\Composite.UnityExtensions.Desktop.csproj", "{17831F3B-6B82-4916-BD2B-2CE2071EA622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.shell", "ezytask.shell\ezytask.shell.csproj", "{CC1E7A65-5187-4733-9437-FFF3D3121140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.infrastructure", "ezytask.infrastructure\ezytask.infrastructure.csproj", "{2E35C37B-3A9E-40EE-97C1-DF87634B80BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.utilities", "ezytask.utilities\ezytask.utilities.csproj", "{0780EE6C-D953-4B8B-961C-A1DE270ADF9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{FAF96E5C-CB6D-4DD0-8BFD-ADFC92AF54B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntLib", "EntLib", "{70171582-66A0-4528-853F-D14895119BCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infragistics", "Infragistics", "{680B6B11-8897-4514-ABC5-BE9975FBB961}"
+	ProjectSection(SolutionItems) = preProject
+		..\lib\Infragistics\Infragistics3.Wpf.Chart.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Chart.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Chart.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.Chart.v9.1.XML
+		..\lib\Infragistics\Infragistics3.Wpf.DataPresenter.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.DataPresenter.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.DataPresenter.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.DataPresenter.v9.1.XML
+		..\lib\Infragistics\Infragistics3.Wpf.DockManager.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.DockManager.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.DockManager.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.DockManager.v9.1.XML
+		..\lib\Infragistics\Infragistics3.Wpf.Editors.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Editors.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Editors.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.Editors.v9.1.XML
+		..\lib\Infragistics\Infragistics3.Wpf.OutlookBar.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.OutlookBar.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.OutlookBar.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.OutlookBar.v9.1.XML
+		..\lib\Infragistics\Infragistics3.Wpf.Reporting.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Reporting.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Reporting.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.Reporting.v9.1.XML
+		..\lib\Infragistics\Infragistics3.Wpf.Ribbon.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Ribbon.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Ribbon.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.Ribbon.v9.1.XML
+		..\lib\Infragistics\Infragistics3.Wpf.Themes.Fall.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Themes.Fall.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Themes.ForestGreen.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Themes.ForestGreen.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Themes.Leaf.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Themes.Leaf.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Themes.Lipstick.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Themes.Lipstick.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Themes.Water.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Themes.Water.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.Themes.Wind.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.Themes.Wind.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.v9.1.dll = ..\lib\Infragistics\Infragistics3.Wpf.v9.1.dll
+		..\lib\Infragistics\Infragistics3.Wpf.v9.1.XML = ..\lib\Infragistics\Infragistics3.Wpf.v9.1.XML
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unity", "Unity", "{9F097DBC-275A-4B64-BA9C-ECA229E8D76D}"
+	ProjectSection(SolutionItems) = preProject
+		..\lib\Unity\Microsoft.Practices.ObjectBuilder2.dll = ..\lib\Unity\Microsoft.Practices.ObjectBuilder2.dll
+		..\lib\Unity\Microsoft.Practices.ObjectBuilder2.xml = ..\lib\Unity\Microsoft.Practices.ObjectBuilder2.xml
+		..\lib\Unity\Microsoft.Practices.Unity.dll = ..\lib\Unity\Microsoft.Practices.Unity.dll
+		..\lib\Unity\Microsoft.Practices.Unity.xml = ..\lib\Unity\Microsoft.Practices.Unity.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{164D66A3-A747-4B93-BF56-A9128299990E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.RightsManagementModule", "Modules\ezytask.RightsManagementModule\ezytask.RightsManagementModule.csproj", "{6218D4F0-F624-4F83-8B70-66AA2D6DB00F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.UsersManagementModule", "Modules\ezytask.UsersManagementModule\ezytask.UsersManagementModule.csproj", "{904583E2-0AAA-4D01-B05B-0A7147BA34F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.TaskInputModule", "Modules\ezytask.TaskInputModule\ezytask.TaskInputModule.csproj", "{1698AE47-023F-49AF-8996-E268B7A4E332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.TaskManagementModule", "Modules\ezytask.TaskManagementModule\ezytask.TaskManagementModule.csproj", "{A4B4CE68-C258-4042-A953-47F35870AC8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.ActivityLoggingModule", "Modules\ezytask.ActivityLoggingModule\ezytask.ActivityLoggingModule.csproj", "{5BD1EA21-754C-4FF2-9D63-525BF2196EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ezytask.Test", "ezytask.Test\ezytask.Test.csproj", "{0E57DA3D-70C6-427A-9B9F-12761500EC0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51679F64-CE21-424A-AE5A-7347FEBB07D0}"
+	ProjectSection(SolutionItems) = preProject
+		ezytask.vsmdi = ezytask.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFToolkit", "..\..\..\..\..\kit\wpf-toolkit\Toolkit-release\WPFToolkit.csproj", "{9606A078-7135-4CE7-879E-39FCF527F1A3}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ezytask.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release with Code Analysis|Any CPU = Release with Code Analysis|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77138947-1D13-4E22-AEE0-5D0DD046CA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77138947-1D13-4E22-AEE0-5D0DD046CA34}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{77138947-1D13-4E22-AEE0-5D0DD046CA34}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{77138947-1D13-4E22-AEE0-5D0DD046CA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77138947-1D13-4E22-AEE0-5D0DD046CA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F807062D-6FC9-4FF0-A9F5-5F94653EDC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F807062D-6FC9-4FF0-A9F5-5F94653EDC4D}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{F807062D-6FC9-4FF0-A9F5-5F94653EDC4D}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{F807062D-6FC9-4FF0-A9F5-5F94653EDC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F807062D-6FC9-4FF0-A9F5-5F94653EDC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17831F3B-6B82-4916-BD2B-2CE2071EA622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17831F3B-6B82-4916-BD2B-2CE2071EA622}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{17831F3B-6B82-4916-BD2B-2CE2071EA622}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{17831F3B-6B82-4916-BD2B-2CE2071EA622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17831F3B-6B82-4916-BD2B-2CE2071EA622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC1E7A65-5187-4733-9437-FFF3D3121140}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1E7A65-5187-4733-9437-FFF3D3121140}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{CC1E7A65-5187-4733-9437-FFF3D3121140}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1E7A65-5187-4733-9437-FFF3D3121140}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{CC1E7A65-5187-4733-9437-FFF3D3121140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1E7A65-5187-4733-9437-FFF3D3121140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E35C37B-3A9E-40EE-97C1-DF87634B80BB}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{2E35C37B-3A9E-40EE-97C1-DF87634B80BB}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{2E35C37B-3A9E-40EE-97C1-DF87634B80BB}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{2E35C37B-3A9E-40EE-97C1-DF87634B80BB}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{2E35C37B-3A9E-40EE-97C1-DF87634B80BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E35C37B-3A9E-40EE-97C1-DF87634B80BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0780EE6C-D953-4B8B-961C-A1DE270ADF9E}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0780EE6C-D953-4B8B-961C-A1DE270ADF9E}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{0780EE6C-D953-4B8B-961C-A1DE270ADF9E}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{0780EE6C-D953-4B8B-961C-A1DE270ADF9E}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{0780EE6C-D953-4B8B-961C-A1DE270ADF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0780EE6C-D953-4B8B-961C-A1DE270ADF9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6218D4F0-F624-4F83-8B70-66AA2D6DB00F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{6218D4F0-F624-4F83-8B70-66AA2D6DB00F}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{6218D4F0-F624-4F83-8B70-66AA2D6DB00F}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{6218D4F0-F624-4F83-8B70-66AA2D6DB00F}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{6218D4F0-F624-4F83-8B70-66AA2D6DB00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6218D4F0-F624-4F83-8B70-66AA2D6DB00F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904583E2-0AAA-4D01-B05B-0A7147BA34F4}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{904583E2-0AAA-4D01-B05B-0A7147BA34F4}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{904583E2-0AAA-4D01-B05B-0A7147BA34F4}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{904583E2-0AAA-4D01-B05B-0A7147BA34F4}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{904583E2-0AAA-4D01-B05B-0A7147BA34F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904583E2-0AAA-4D01-B05B-0A7147BA34F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1698AE47-023F-49AF-8996-E268B7A4E332}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{1698AE47-023F-49AF-8996-E268B7A4E332}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{1698AE47-023F-49AF-8996-E268B7A4E332}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{1698AE47-023F-49AF-8996-E268B7A4E332}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{1698AE47-023F-49AF-8996-E268B7A4E332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1698AE47-023F-49AF-8996-E268B7A4E332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B4CE68-C258-4042-A953-47F35870AC8B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B4CE68-C258-4042-A953-47F35870AC8B}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{A4B4CE68-C258-4042-A953-47F35870AC8B}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B4CE68-C258-4042-A953-47F35870AC8B}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{A4B4CE68-C258-4042-A953-47F35870AC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B4CE68-C258-4042-A953-47F35870AC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD1EA21-754C-4FF2-9D63-525BF2196EC2}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD1EA21-754C-4FF2-9D63-525BF2196EC2}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{5BD1EA21-754C-4FF2-9D63-525BF2196EC2}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD1EA21-754C-4FF2-9D63-525BF2196EC2}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{5BD1EA21-754C-4FF2-9D63-525BF2196EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD1EA21-754C-4FF2-9D63-525BF2196EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E57DA3D-70C6-427A-9B9F-12761500EC0C}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0E57DA3D-70C6-427A-9B9F-12761500EC0C}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{0E57DA3D-70C6-427A-9B9F-12761500EC0C}.Release with Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{0E57DA3D-70C6-427A-9B9F-12761500EC0C}.Release with Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{0E57DA3D-70C6-427A-9B9F-12761500EC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E57DA3D-70C6-427A-9B9F-12761500EC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9606A078-7135-4CE7-879E-39FCF527F1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9606A078-7135-4CE7-879E-39FCF527F1A3}.Release with Code Analysis|Any CPU.ActiveCfg = Release with Code Analysis|Any CPU
+		{9606A078-7135-4CE7-879E-39FCF527F1A3}.Release with Code Analysis|Any CPU.Build.0 = Release with Code Analysis|Any CPU
+		{9606A078-7135-4CE7-879E-39FCF527F1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9606A078-7135-4CE7-879E-39FCF527F1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77138947-1D13-4E22-AEE0-5D0DD046CA34} = {36985A03-B81A-417B-AC43-38155F699BD9}
+		{F807062D-6FC9-4FF0-A9F5-5F94653EDC4D} = {36985A03-B81A-417B-AC43-38155F699BD9}
+		{17831F3B-6B82-4916-BD2B-2CE2071EA622} = {36985A03-B81A-417B-AC43-38155F699BD9}
+		{70171582-66A0-4528-853F-D14895119BCA} = {FAF96E5C-CB6D-4DD0-8BFD-ADFC92AF54B7}
+		{680B6B11-8897-4514-ABC5-BE9975FBB961} = {FAF96E5C-CB6D-4DD0-8BFD-ADFC92AF54B7}
+		{9F097DBC-275A-4B64-BA9C-ECA229E8D76D} = {FAF96E5C-CB6D-4DD0-8BFD-ADFC92AF54B7}
+		{9606A078-7135-4CE7-879E-39FCF527F1A3} = {FAF96E5C-CB6D-4DD0-8BFD-ADFC92AF54B7}
+		{6218D4F0-F624-4F83-8B70-66AA2D6DB00F} = {164D66A3-A747-4B93-BF56-A9128299990E}
+		{904583E2-0AAA-4D01-B05B-0A7147BA34F4} = {164D66A3-A747-4B93-BF56-A9128299990E}
+		{1698AE47-023F-49AF-8996-E268B7A4E332} = {164D66A3-A747-4B93-BF56-A9128299990E}
+		{A4B4CE68-C258-4042-A953-47F35870AC8B} = {164D66A3-A747-4B93-BF56-A9128299990E}
+		{5BD1EA21-754C-4FF2-9D63-525BF2196EC2} = {164D66A3-A747-4B93-BF56-A9128299990E}
+	EndGlobalSection
+EndGlobal

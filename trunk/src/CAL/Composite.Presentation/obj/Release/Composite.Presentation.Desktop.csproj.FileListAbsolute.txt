@@ -1,0 +1,3 @@
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Release\ResolveAssemblyReference.cache
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Release\Microsoft.Practices.Composite.Presentation.Properties.Resources.resources
+D:\Teo\googlecode\ezytask\src\CAL\Composite.Presentation\obj\Release\Composite.Presentation.Desktop.csproj.GenerateResource.Cache
